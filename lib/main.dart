@@ -100,7 +100,7 @@ class MyHome extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () => Get.toNamed('10_chatapp'),
-              child: const Text("10. 모두의 채팅 앱 만들기"),
+              child: const Text("10. 모두의 채팅 앱 만들기."),
             ),
           ],
         ),
