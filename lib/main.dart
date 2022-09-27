@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:study_book_modu_ui_1/6_profile/6_profile.dart';
-import 'package:study_book_modu_ui_1/9_airbnb/9_airbnb.dart';
 
 import '4_storeapp/4_storeapp.dart';
 import '5_recipe/5_recipe.dart';
+import '6_profile/6_profile.dart';
 import '7_login/7_login.dart';
 import '8_shoppingcart/8_shoppingcart.dart';
+import '9_airbnb/9_airbnb.dart';
+import '10_chatapp/10_chatapp.dart';
 
 /*
 https://github.com/flutter-coder/flutter-ui-book1
@@ -54,7 +55,7 @@ class MyApp extends StatelessWidget {
         ),
         GetPage(
           name: '/10_chatapp',
-          page: () => ProfilePage(),
+          page: () => ChatApp(),
         ),
       ],
     );
@@ -100,7 +101,7 @@ class MyHome extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () => Get.toNamed('10_chatapp'),
-              child: const Text("10. 모두의 채팅 앱 만들기."),
+              child: const Text("10. 모두의 채팅 앱 만들기. "),
             ),
           ],
         ),
