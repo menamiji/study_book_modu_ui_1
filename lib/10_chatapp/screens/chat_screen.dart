@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../components/chat_card.dart';
+import '../models/chat.dart';
 
 class ChatScreen extends StatelessWidget {
   @override
@@ -9,7 +11,10 @@ class ChatScreen extends StatelessWidget {
         title: Text("채팅"),
       ),
       body: ListView(
-        children: List.generate(chat.length, (index) => ChatCard(chat: chats[index]))
+        children: List.generate(
+          chats.length,
+          (index) => ChatCard(chat: chats[index]),
+        ),
       ),
     );
   }
