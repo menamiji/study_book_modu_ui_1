@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:study_book_modu_ui_1/10_chatapp/screens/chat_room_screen.dart';
+import '../screens/chat_room_screen.dart';
 import '../models/chat.dart';
 
 class ChatCard extends StatelessWidget {
